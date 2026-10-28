@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="darkbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" rx="16" fill="url(#darkbg)" stroke="#1f2937" stroke-width="2" />
+
+  <!-- App Header -->
+  <rect x="24" y="20" width="952" height="50" rx="8" fill="url(#card)" stroke="#334155" />
+  <text x="40" y="52" font-family="sans-serif" font-size="18" font-weight="bold" fill="#ffffff">FFCSTSForge Pro | CCSDS 922.3-B-1 Forward Frame Studio</text>
+  <rect x="800" y="32" width="160" height="26" rx="13" fill="rgba(52, 211, 153, 0.15)" stroke="#34d399" />
+  <circle cx="816" cy="45" r="4" fill="#34d399" />
+  <text x="828" y="49" font-family="sans-serif" font-size="11" font-weight="bold" fill="#34d399">STATUS: 10/10 PASS</text>
+
+  <!-- Left Sidebar -->
+  <rect x="24" y="86" width="280" height="488" rx="10" fill="url(#card)" stroke="#334155" />
+  <text x="40" y="116" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">UPLINK CONFIGURATION</text>
+  
+  <rect x="40" y="136" width="248" height="36" rx="6" fill="#0b0f19" stroke="#38bdf8" />
+  <text x="52" y="159" font-family="sans-serif" font-size="11" fill="#ffffff">DSN-DSS-26 (Goldstone 34m)</text>
+
+  <text x="40" y="196" font-family="sans-serif" font-size="11" fill="#94a3b8">FRAME PROTOCOL</text>
+  <rect x="40" y="206" width="248" height="36" rx="6" fill="#0b0f19" stroke="#334155" />
+  <text x="52" y="229" font-family="sans-serif" font-size="12" fill="#ffffff">CCSDS 232.0-B-4 (TC Frame)</text>
+
+  <text x="40" y="266" font-family="sans-serif" font-size="11" fill="#94a3b8">RADIATION MODE</text>
+  <rect x="40" y="276" width="248" height="36" rx="6" fill="#0b0f19" stroke="#334155" />
+  <text x="52" y="299" font-family="sans-serif" font-size="12" fill="#ffffff">IMMEDIATE (FIFO Uplink)</text>
+
+  <rect x="40" y="330" width="248" height="40" rx="6" fill="#0284c7" />
+  <text x="65" y="355" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">INJECT &amp; RADIATE FRAME</text>
+
+  <!-- 4 Metrics Cards -->
+  <g transform="translate(324, 86)">
+    <rect x="0" y="0" width="150" height="80" rx="8" fill="url(#card)" stroke="#334155" />
+    <text x="14" y="24" font-family="sans-serif" font-size="10" fill="#94a3b8">CSTS STATE</text>
+    <text x="14" y="54" font-family="sans-serif" font-size="20" font-weight="bold" fill="#34d399">ACTIVE</text>
+    <text x="14" y="70" font-family="sans-serif" font-size="9" fill="#38bdf8">State 3: Radiating</text>
+
+    <rect x="166" y="0" width="150" height="80" rx="8" fill="url(#card)" stroke="#334155" />
+    <text x="180" y="24" font-family="sans-serif" font-size="10" fill="#94a3b8">CARRIER STATE</text>
+    <text x="180" y="54" font-family="sans-serif" font-size="18" font-weight="bold" fill="#34d399">MODULATING</text>
+    <text x="180" y="70" font-family="sans-serif" font-size="9" fill="#34d399">Subcarrier Locked</text>
+
+    <rect x="332" y="0" width="150" height="80" rx="8" fill="url(#card)" stroke="#334155" />
+    <text x="346" y="24" font-family="sans-serif" font-size="10" fill="#94a3b8">FRAMES RADIATED</text>
+    <text x="346" y="54" font-family="sans-serif" font-size="20" font-weight="bold" fill="#38bdf8">105</text>
+    <text x="346" y="70" font-family="sans-serif" font-size="9" fill="#34d399">Cumulative Total</text>
+
+    <rect x="498" y="0" width="154" height="80" rx="8" fill="url(#card)" stroke="#334155" />
+    <text x="512" y="24" font-family="sans-serif" font-size="10" fill="#94a3b8">BUFFER DEPTH</text>
+    <text x="512" y="54" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff">0 / 50</text>
+    <text x="512" y="70" font-family="sans-serif" font-size="9" fill="#38bdf8">Queue Nominal</text>
+  </g>
+
+  <!-- Table -->
+  <g transform="translate(324, 186)">
+    <rect x="0" y="0" width="652" height="200" rx="10" fill="url(#card)" stroke="#334155" />
+    <text x="20" y="30" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">UPLINK FORWARD FRAME QUEUE &amp; RADIATED TELECOMMANDS (&sect;3.4)</text>
+
+    <rect x="15" y="46" width="622" height="26" fill="#0b0f19" />
+    <text x="25" y="63" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8">SEQ #</text>
+    <text x="90" y="63" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8">FRAME ID</text>
+    <text x="220" y="63" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8">PROTOCOL</text>
+    <text x="360" y="63" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8">VC ID</text>
+    <text x="440" y="63" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8">LENGTH</text>
+    <text x="540" y="63" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8">STATUS</text>
+
+    <text x="25" y="94" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">#105</text>
+    <text x="90" y="94" font-family="sans-serif" font-size="11" fill="#38bdf8">TC-FRAME-105</text>
+    <text x="220" y="94" font-family="sans-serif" font-size="11" fill="#ffffff">CCSDS 232.0 (TC)</text>
+    <text x="360" y="94" font-family="sans-serif" font-size="11" fill="#ffffff">VC-01</text>
+    <text x="440" y="94" font-family="sans-serif" font-size="11" fill="#ffffff">256 B</text>
+    <text x="540" y="94" font-family="sans-serif" font-size="11" font-weight="bold" fill="#34d399">RADIATED</text>
+
+    <text x="25" y="124" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">#104</text>
+    <text x="90" y="124" font-family="sans-serif" font-size="11" fill="#38bdf8">TC-FRAME-104</text>
+    <text x="220" y="124" font-family="sans-serif" font-size="11" fill="#ffffff">CCSDS 232.0 (TC)</text>
+    <text x="360" y="124" font-family="sans-serif" font-size="11" fill="#ffffff">VC-01</text>
+    <text x="440" y="124" font-family="sans-serif" font-size="11" fill="#ffffff">256 B</text>
+    <text x="540" y="124" font-family="sans-serif" font-size="11" font-weight="bold" fill="#34d399">RADIATED</text>
+
+    <text x="25" y="154" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">#103</text>
+    <text x="90" y="154" font-family="sans-serif" font-size="11" fill="#38bdf8">TC-FRAME-103</text>
+    <text x="220" y="154" font-family="sans-serif" font-size="11" fill="#ffffff">CCSDS 232.0 (TC)</text>
+    <text x="360" y="154" font-family="sans-serif" font-size="11" fill="#ffffff">VC-02</text>
+    <text x="440" y="154" font-family="sans-serif" font-size="11" fill="#ffffff">512 B</text>
+    <text x="540" y="154" font-family="sans-serif" font-size="11" font-weight="bold" fill="#34d399">RADIATED</text>
+  </g>
+
+  <!-- Live XML Feed Terminal -->
+  <g transform="translate(324, 404)">
+    <rect x="0" y="0" width="652" height="170" rx="10" fill="#0b0f19" stroke="#334155" />
+    <text x="20" y="26" font-family="monospace" font-size="11" fill="#38bdf8">&lt;csts_ff_message xmlns="urn:ccsds:schema:csts:ff:1.0"&gt;</text>
+    <text x="36" y="46" font-family="monospace" font-size="11" fill="#94a3b8">&lt;standard&gt;CCSDS 922.3-B-1&lt;/standard&gt;&lt;service_state&gt;ACTIVE&lt;/service_state&gt;</text>
+    <text x="36" y="66" font-family="monospace" font-size="11" fill="#34d399">&lt;forward_frame_buffer seq="105"&gt;&lt;radiation_status&gt;RADIATED&lt;/radiation_status&gt;&lt;/forward_frame_buffer&gt;</text>
+    <text x="36" y="86" font-family="monospace" font-size="11" fill="#ffffff">&lt;frames_radiated_total&gt;105&lt;/frames_radiated_total&gt;</text>
+    <text x="20" y="106" font-family="monospace" font-size="11" fill="#38bdf8">&lt;/csts_ff_message&gt;</text>
+  </g>
+</svg>
